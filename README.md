@@ -15,8 +15,9 @@ Criar repositório no github.com | BitBucket (conta pessoal) https://github.com/
                       git add .
                       git commit  -am “initial commit”
                       git push origin  feature/cups_dockerfile
-                      git request-pull feature/cups_dockerfile https://github.com/mt-ribeiro/cups_labs develop
-
+                      git request-pull develop https://github.com/mt-ribeiro/cups_labs feature/cups_dockerfile
+                      git checkout develop
+                      git merge feature/cups_dockerfile
                        
 1. **Criar uma estrutura monorepo para a app**
  * Construção da imagem (Dockerfile)
